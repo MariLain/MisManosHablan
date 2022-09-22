@@ -13,7 +13,10 @@
     --color-gris:#BBC0C2;
 }
 
-
+header{
+    padding: 20px;
+    background-color: rgb(230, 176, 176)
+}
 
 
 li{
@@ -31,16 +34,17 @@ header{
 }
 
 .menu{
-    padding: 15px;
+    padding: 5px;
 }
 
 .menu ul {
     display:flex; 
+    
 }
 
-/* .menu ul li{
+ .menu ul li{
     margin: 5px;
-} */
+} 
 
 .menu ul li a{
     padding: 10px;
