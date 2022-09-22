@@ -6,11 +6,19 @@
 
 
 :root {
+    /* colores normales */
     --color-celeste: #04C4D9;
     --color-verde:#4CA649;
     --color-amarillo:#FEC006;
     --color-rojo:#F23838;
     --color-gris:#BBC0C2;
+
+    /* colores opacos */
+    --color-celesteOpaco: #04c4d982;
+    --color-verdeOpaco:#4ca649b5;
+    --color-amarilloOpaco:#fec00675;
+    --color-rojoOpaco:#f238387a;
+    --color-grisOpaco:#bbc0c27d;
 }
 
 
@@ -18,7 +26,7 @@
 
 header{
     padding: 20px;
-    background-color: rgb(230, 176, 176)
+    background-color: var(--color-verdeOpaco);
 }
 
 
@@ -37,7 +45,7 @@ li{
 
 header{
     display:flex;
-    /* flex-direction: row-reverse; */
+
     justify-content:space-between;
 }
 
@@ -54,6 +62,9 @@ header{
  .menu ul li{
     margin: 5px;
     padding: 10px;
+    background-color:var(--color-verde);
+    border-radius: 50px 100px;
+    border:solid 1px rgb(104, 104, 104)
 } 
 
 .menu ul li a{
