@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-celeste: #04C4D9;
+    --color-verde:#4CA649;
+    --color-amarillo:#FEC006;
+    --color-rojo:#F23838;
+    --color-gris:#BBC0C2;
+}
+
+
+
+a{
+    text-decoration: none;
+    
+}
+
+li{
+    list-style: none;
+}
+
+.logo h1{
+    font-family: 'Leckerli One', cursive;
+    font-weight: normal;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+}
+
+.menu{
+    padding: 15px;
+}
+
+.menu ul {
+    display:flex; 
+}
+
+/* .menu ul li{
+    margin: 5px;
+} */
+
+.menu ul li a{
+    padding: 10px;
+    color: white;
+    font-family: 'Coming Soon', cursive;
+}
+
+
+.home{
+    background-color: var(--color-celeste);
+}
+
+.nosotros{
+    background-color: var(--color-verde);
+}
+
+.contenido{
+    background-color: var(--color-amarillo);
+}
+
+.juegos{
+    background-color: var(--color-rojo);
+}
+
+
+
