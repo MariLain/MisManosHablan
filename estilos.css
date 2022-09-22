@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 :root {
     --color-celeste: #04C4D9;
     --color-verde:#4CA649;
@@ -14,10 +15,6 @@
 
 
 
-a{
-    text-decoration: none;
-    
-}
 
 li{
     list-style: none;
@@ -49,8 +46,8 @@ header{
     padding: 10px;
     color: white;
     font-family: 'Coming Soon', cursive;
+    text-decoration: none;
 }
-
 
 .home{
     background-color: var(--color-celeste);
