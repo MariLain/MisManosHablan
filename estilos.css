@@ -8,14 +8,14 @@
 :root {
     /* colores normales */
     --color-celeste: #04C4D9;
-    --color-verde:#4CA649;
+    --color-verde:#488546;
     --color-amarillo:#FEC006;
     --color-rojo:#F23838;
     --color-gris:#BBC0C2;
 
     /* colores opacos */
     --color-celesteOpaco: #04c4d982;
-    --color-verdeOpaco:#4ca649b5;
+    --color-verdeOpaco:#76ab74;
     --color-amarilloOpaco:#fec00675;
     --color-rojoOpaco:#f238387a;
     --color-grisOpaco:#bbc0c27d;
@@ -26,7 +26,7 @@
 
 header{
     padding: 20px;
-    background-color: var(--color-verdeOpaco);
+    background-color: var(--color-verde);
 }
 
 
@@ -36,11 +36,9 @@ li{
 
 
 
-.logo h1{
-    font-family: 'Leckerli One', cursive;
-    font-weight: normal;
+.logo img{
+    width: 150px;
     margin-bottom: 0;
-    padding-top: 15px;
 }
 
 header{
@@ -49,9 +47,7 @@ header{
     justify-content:space-between;
 }
 
-.menu{
-    padding: 5px;
-}
+
 
 .menu ul {
     display:flex; 
@@ -61,8 +57,7 @@ header{
 
 .menu ul li{
     margin: 5px;
-    padding: 10px;
-    background-color:var(--color-verde);
+    background-color:var(--color-verdeOpaco);
     border-radius: 50px 100px;
     border:solid 1px rgb(104, 104, 104)
 } 
@@ -87,6 +82,11 @@ header{
 
 .juegos{
     background-color: var(--color-rojo);
+}
+
+.separador{
+    height: 2px;
+    background-color:#000000;
 }
 
 /* HEADER JEANFRY FIN DE HEADER */
