@@ -19,6 +19,9 @@
     --color-amarilloOpaco:#fec00675;
     --color-rojoOpaco:#f238387a;
     --color-grisOpaco:#bbc0c27d;
+
+    /*Colores Pasteles */
+    --color-clestePastel: #34acb981;
 }
 
 
@@ -117,13 +120,27 @@ header{
     text-decoration: underline;
 }
 .tituloPresentacion{
-    background-color: var(--color-celesteOpaco);
-}
-h3{
+    background-color: var(--color-clestePastel);
+    padding: 10px;
+    height: 180px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
+}
+.presentacion div h2{
+    font-size: 15px;
+}
 
+/*contenido principal del main*/
+
+.presentacionContenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 8%;
+}
+.presentacionContenido img{
+    width: 500px;
 }
 
 
