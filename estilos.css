@@ -22,7 +22,7 @@ body{
     min-height: 100vh;
 }
 .header{
-    background-color: #4CA649;
+    background-color: #002930;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,10 +39,10 @@ nav{
 }
 .header .logo{
     display: flex;
-    background-color: rgba(255, 255, 255, 0.645);
+    background-color: rgb(210, 210, 210);
     border-radius: 50px ;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
     margin-left: 30px;
 }
 .header .logo h1{
@@ -52,11 +52,33 @@ nav{
 .header .logo img{
     height: 40px;
     width: 50px;
-    transition: all 0.3s;
+    transition: all 0.30s;
+    animation-name: palpitar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
-.header .logo img:hover{
+
+@keyframes palpitar{
+    0%{
+        transform:scale(1,1);
+    }
+    20%{
+        transform:scale(1.2,1.2);
+    }
+    25%{
+        transform:scale(1,1);
+    }
+    40%{
+        transform:scale(1.2,1.2);
+    }
+    45%{
+        transform:scale(1,1);
+    }
+}
+
+/* .header .logo img:hover{
     transform: scale(0.9);
-}
+} */
 .header .nav-links li{
     display: inline-block;
 }
@@ -72,15 +94,19 @@ nav{
     padding: 10px;
     transition: all .5s;
 }
-
-.header .nav-links a:hover{
-    color: #212529;
+.header .nav-links li i{
+    color: #ab5315;
 }
+.header .nav-links a:hover{
+    color: #f3e78e;
+}
+
+
 .header .nav-links li a:after{
     content: "";
     width: 0;
     height: 2px;
-    background-color: #30674c;
+    background-color: #ab5315;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -92,7 +118,7 @@ nav{
     content: "";
     width: 0;
     height: 2px;
-    background-color: #212529;
+    background-color: #f9f9f9;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -129,9 +155,9 @@ nav{
     transform: scale(1.1);
 } */
 .separador{
-    width: 65%;
+    width: 100%;
     height: 6px;
-    background-color:#4CA649;
+    background-color:#ac4a00;
 }
 
 .globos div{
@@ -142,21 +168,21 @@ nav{
     
 }
 .globos div:nth-child(1){ /* globo arriba a la derecha */
-    background-color:#4ca64994;
+    background-color:#ac4b00c5;
     width: 200px;
     height: 200px;
     right: 80px;
     top:1px
 }
 .globos div:nth-child(2){ /*  globo abajo a la derecha*/
-    background-color:#4ca649ca;
+    background-color:#ac4b0086;
     width: 200px;
     height: 200px;
     right: 10px;
     bottom:50px
 }
 .globos div:nth-child(3){ /* globo arriba a la izquierda */
-    background-color:#4ca64972;
+    background-color:#ac4b00c6;
     width: 300px;
     height: 300px;
     right: 200px;
@@ -164,7 +190,7 @@ nav{
     left:-150px;
 }
 .globos div:nth-child(4){ /* globo abajo a la izquierda */
-    background-color:#4ca649ce;
+    background-color:#ac4b007d;
     width: 300px;
     height: 300px;
     bottom: 20px;
@@ -172,14 +198,14 @@ nav{
     
 }
 .globos div:nth-child(5){ /* globo abajo en medio */
-    background-color:#4ca649ab;
+    background-color:#ac4b00c1;
     width: 300px;
     height: 300px;
     left: 600px;
     top: 500px;
 }
 .globos div:nth-child(6){ /* globo arriba en medio */
-    background-color:#4ca649c8;
+    background-color:#ac4b00b3;
     width: 200px;
     height: 200px;
     left: 700px;
@@ -198,16 +224,17 @@ nav{
     clip-path: circle(20% at right 90%);
 }  */
 
+
+
 .presentacion{
     height: calc(100vh - 85px);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 50px;
-
 }
 .presentacion img{
-    width: 98%;
+
     padding-bottom: 40px;
 }
 .texto-home{
@@ -237,19 +264,41 @@ nav{
     margin: 0 auto;
 } */
 
+.curveado{
+    position: absolute;
+    bottom:-30px;
+    left: 0;
+
+    width: 100%;
+    height: 100px;
+    background:   url(img/wave.png);
+    background-size: 1000px 100px;
+    animation: wave 20s linear infinite;
+    filter: brightness(0) saturate(100%) invert(87%) sepia(20%) saturate(504%) hue-rotate(9deg) brightness(107%) contrast(94%);
+
+}
+
+@keyframes wave {
+    0%{
+        background-position-x:0;
+    }
+    100%{
+        background-position-x:1000px;
+    }
+}
+
 
 
 
 
 
 footer{
-    height: auto;
-    width: auto;
+
     background-color: #103c5c;
     padding-top: 20px;
     color: #7ca4bc;
-    text-align: center;
-    margin-top: auto;
+
+
 }
 .contenedor-footer{
     display: flex;
@@ -270,8 +319,8 @@ footer{
 .redes{
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+
 
 }
 .redes li{
@@ -307,4 +356,37 @@ footer > div > ul > li > a > img:hover{
 #button-up:hover{
     transform: scale(1.1);
     border-color: rgb(0,0,0,0.1);
+}
+
+.secciones{
+    background-color: #f8f0af;
+}
+
+.texto-principal{
+    padding-top: 50px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.textos{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+
+.textos img{
+    width: 30%;
+}
+
+.texto h4,.secciones h4 {
+    font-size:50px;
+    padding-bottom: 20px;
+}
+
+.texto{
+    width: 45%;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
