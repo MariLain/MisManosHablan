@@ -11,10 +11,21 @@
     list-style: none;
 }
 
+:root {
+    --color-azul:#002930;
+    --color-blanco-1:#D2D2D2 ;
+    --color-blanco-2:#F1E9DB;
+    --color-negro1:#212529;
+    ---color-negro2:black;
+    --color-naranja:#ab5315;
+    --color-amarillo1:#f3e78e; 
+    --color-amarillo2:#f8f0af;
+}
+
 h1, h2, h3, h4, h5, h6{
     margin-top: 0;
     line-height: 1.2;
-    color:#212529;
+    color:var(--color-negro1);
 }
 body{
     display: flex;
@@ -22,7 +33,7 @@ body{
     min-height: 100vh;
 }
 .header{
-    background-color: #002930;
+    background-color: var(--color-azul);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,15 +42,10 @@ body{
 nav{
     padding-right: 40px;
 }
-.barra-menu{
-    border-radius: 200px;
-    background-color:#212529;
-    height: 5px;
-    width: 100%;
-}
+
 .header .logo{
     display: flex;
-    background-color: rgb(210, 210, 210);
+    background-color: var(--color-blanco-1) ;
     border-radius: 50px ;
     cursor: pointer;
     padding: 10px;
@@ -88,17 +94,17 @@ nav{
  */
 .header .nav-links a{
     font-size: 700;
-    color: rgba(227, 226, 226, 0.926);
+    color: var(--color-blanco-1);
     text-decoration: none;    
     position: relative;
     padding: 10px;
     transition: all .5s;
 }
 .header .nav-links li i{
-    color: #ab5315;
+    color: var(--color-naranja);
 }
 .header .nav-links a:hover{
-    color: #f3e78e;
+    color: var(--color-amarillo1);
 }
 
 
@@ -106,7 +112,7 @@ nav{
     content: "";
     width: 0;
     height: 2px;
-    background-color: #ab5315;
+    background-color: var(--color-naranja);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -118,7 +124,7 @@ nav{
     content: "";
     width: 0;
     height: 2px;
-    background-color: #f9f9f9;
+    background-color: var(--color-blanco-2);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -157,7 +163,7 @@ nav{
 .separador{
     width: 100%;
     height: 6px;
-    background-color:#ac4a00;
+    background-color:var(--color-naranja);
 }
 
 .globos div{
@@ -251,7 +257,7 @@ nav{
 .presentacion div h2,
 .presentacion div h3{
     display: flex;
-    color: black;
+    color: var(---color-negro2);
     font-size: 150%;
 }
 .presentacion div h2{
@@ -265,7 +271,7 @@ nav{
 } */
 
 .curveado{
-    position: absolute;
+
     bottom:-30px;
     left: 0;
 
@@ -294,9 +300,9 @@ nav{
 
 footer{
 
-    background-color: #103c5c;
+    background-color: var(--color-azul);
     padding-top: 20px;
-    color: #7ca4bc;
+    color: var(--color-naranja);
 
 
 }
@@ -308,6 +314,7 @@ footer{
     text-align: center;
 }
 .contenedor-footer h3{
+    color: var(--color-blanco-1);
     font-size: 30px;
     font-weight: bold;
 }
@@ -337,7 +344,7 @@ footer > div > ul > li > a > img:hover{
 #button-up{
     width: 60px;
     height: 60px;
-    background: #46a2fd;
+    background: var(--color-naranja);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,7 +366,7 @@ footer > div > ul > li > a > img:hover{
 }
 
 .secciones{
-    background-color: #f8f0af;
+    background-color: var(--color-amarillo2);
 }
 
 .texto-principal{
