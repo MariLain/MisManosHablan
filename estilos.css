@@ -397,3 +397,77 @@ footer > div > ul > li > a > img:hover{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+/*****************Contactanos********************/
+.contacto{
+    color: var(--color-negro1);
+    background-color: var(--color-amarillo2);
+    height: 100%;
+    padding: 5%;
+    text-align: center;
+}
+.formulario{
+    margin: 0 auto;
+    padding: 5%;
+    width: 45%;
+    background-color: var(--color-blanco-2);
+    border-radius: 3%;
+    box-shadow: 10px 5px 19px -5px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 10px 5px 19px -5px rgba(0,0,0,0.33);
+    -moz-box-shadow: 10px 5px 19px -5px rgba(0,0,0,0.33);  
+    
+}
+
+/* .formulario label,
+.formulario input, 
+.formulario textarea{
+    display: block;
+} */
+.formulario h2{
+    font-size:50px;
+    margin-bottom: 4%;
+    justify-content: center;
+}
+.formulario input, 
+.formulario textarea,
+.botonEnvio,
+.opciones{
+    font-size: 16px;
+}
+.formulario textarea {
+    resize: none;
+}
+.formulario input, 
+.formulario textarea{
+    width: 90%;
+    margin: 3% auto;
+    padding: 12px;
+    border: none;
+    background-color: var(--color-blanco-2);
+    border-bottom: 3px solid #ab54157e; /*Color sin variable*/
+}
+.formulario .botonEnvio{
+    box-shadow: 6px 5px 8px -4px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 6px 5px 8px -4px rgba(0,0,0,0.51);
+    -moz-box-shadow: 6px 5px 8px -4px rgba(0,0,0,0.51);
+    width: 50%;
+}
+.formulario textarea{
+    height: 250px;
+}
+.formulario .opciones{
+    display: inline-block;
+    width: auto;
+    margin: 3px;
+
+}
+.formulario input:focus, 
+.formulario textarea:focus{
+    outline: none;
+    border-bottom:3px solid var(--color-naranja);
+    transition: 0.5s;
+}
+.formulario .botonEnvio{
+    background-color: var(--color-naranja);
+    margin-top: 10%;
+    border-bottom: none;
+}
