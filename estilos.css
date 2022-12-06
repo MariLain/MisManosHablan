@@ -465,9 +465,155 @@ footer > div > ul > li > a > img:hover{
     outline: none;
     border-bottom:3px solid var(--color-naranja);
     transition: 0.5s;
+    background: linear-gradient(to bottom, transparent, #bc937377);
 }
 .formulario .botonEnvio{
     background-color: var(--color-naranja);
     margin-top: 10%;
     border-bottom: none;
+}
+
+/* NOSOTROS*/
+
+#nosotros{
+    max-width: 1200px;
+    margin: auto;
+    /* padding: 100px 15px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    display: flex;
+
+}
+
+#nosotros .contenedor-foto{
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#nosotros .contenedor-foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    border-radius: 250%; /* BORDE */
+}
+
+#nosotros .nosotros{
+    margin: 0 40px;
+
+
+}
+
+#nosotros .nosotros .titulo-seccion {
+    /* font-size: 25px; */
+    text-transform: uppercase;
+    color: black;
+    text-decoration-color: white;
+    
+}
+
+
+#nosotros .nosotros h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+
+#nosotros .nosotros h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    width: 600px;
+}
+
+#nosotros .nosotros p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #393e42;
+    margin-bottom: 12px;
+}
+
+#nosotros .nosotros a{
+    display: inline-block;
+    color: black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-top: 100px;
+    transition: .5s;
+}
+
+#nosotros .nosotros a:hover{
+    background-color: violet;
+    color: white;
+}
+
+
+/* CONTENIDO */
+
+
+.contenedor-galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: #f8f0af;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+}
+
+.contenedor-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* revisar */
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;  /* SOMBRA*/
+    cursor: pointer;
+    
+    transition: all 0.3s ease-in-out;
+
+    background: rgba(11,103,123,0.6);
+
+    
+}
+
+/* SOMBRA */
+.contenedor-galeria img:hover{       
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px black;
+    
+}
+
+.contenedor-imagen{
+    padding: 20px;
+    position: relative;
+    
+}
+
+.titulo-galeria-contenido{
+    position: absolute;
+
+    /* bottom: 0;
+    top: 45%;
+    left: 40%; */
+    color: white;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px rgb(0,0,0,0.8);
+
+    /* background-color: #4b4c4d; */
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    
 }
